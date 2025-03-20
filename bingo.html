@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>ビンゴカード</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <table class="bingo-card">
+        <?php foreach ($html_bingo_data as $row): ?>
+            <tr>
+            <?php foreach ($row as $cell): ?>
+                <td class="<?php echo $cell["selected"] ? "selected" : ""; ?>">
+                    <?php echo $cell["word"]; ?>
+                </td>
+            <?php endforeach; ?>
+            </tr>
+        <?php endforeach; ?>
+        </table>
+    </body>
+</html>
