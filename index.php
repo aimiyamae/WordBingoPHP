@@ -108,22 +108,6 @@ function check_bingo($html_bingo_data) {
     return "no";
 }
 
-// $input_data = <<<'EOD'
-// 4
-// beer wine gin vodka
-// beef chicken pork seafood
-// ant bee ladybug beetle
-// bear snake dog camel
-// 7
-// be
-// bear
-// bee
-// beef
-// been
-// beer
-// beetle
-
-// EOD;
 $input_data = stream_get_contents(STDIN);
 
 $lines = explode("\n", $input_data);
